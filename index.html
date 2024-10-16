@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create Event</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="index.html">Create Event</a>
+      <a href="viewevents.html">View Events</a>
+      <a href="registerevent.html">Register for Event</a>
+    </nav>
+  </header>
+
+  <div class="title-container">
+    <h2>Create a New Event</h2>
+  </div>
+
+  <!-- Form for creating a new event -->
+  <form id="create-event-form">
+    <label for="event-name">Event Name:</label>
+    <input type="text" id="event-name" name="event-name" required>
+
+    <label for="event-date">Date:</label>
+    <input type="date" id="event-date" name="event-date" required>
+    
+    <label for="event-location">Location:</label>
+    <input type="text" id="event-location" name="event-location" required>
+
+    <label for="sport">Select Sport:</label>
+    <select id="sport" name="sport" required>
+      <option value="">--Choose a Sport--</option>
+      <option value="soccer">Soccer</option>
+      <option value="basketball">Basketball</option>
+      <option value="tennis">Tennis</option>
+      <option value="volleyball">Volleyball</option>
+      <option value="cricket">Cricket</option>
+    </select>
+
+    <button type="submit">Create Event</button>
+  </form>
+
+  <!-- Section to display messages -->
+  <div id="message"></div>
+
+  <script src="index.js"></script>
+</body>
+</html>

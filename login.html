@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="login.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Left side content -->
+    <div class="left">
+      <h1>Sport Event Manager</h1>
+      <p>Welcome to the best platform to manage sport events.</p>
+    </div>
+
+    <!-- Login form on the right side -->
+    <div class="right">
+      <div class="login-box">
+        <h2>Log In</h2>
+        <form id="loginForm">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" required>
+
+          <button type="submit">Log In</button>
+
+          <!-- Error message for failed login attempts -->
+          <p id="errorMessage" style="display: none; color: red;"></p>
+        </form>
+
+        <hr>
+
+        <button onclick="window.location.href='/create-account'" class="create-account-button">Create New Account</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- JavaScript for login functionality -->
+  <script src="login.js"></script>
+</body>
+</html>

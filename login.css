@@ -1,0 +1,117 @@
+/* General page styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  /* Main container for the layout */
+  .container {
+    display: flex;
+    width: 80%;
+    max-width: 1200px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  
+  /* Left section styling */
+  .left {
+    flex: 1;
+    background-color: #f0f2f5;
+    padding: 40px;
+  }
+  
+  .left h1 {
+    font-size: 48px;
+    color: #1877f2; /* Replace with your app's color */
+  }
+  
+  .left p {
+    font-size: 18px;
+    color: #555;
+  }
+  
+  /* Right section with login form */
+  .right {
+    flex: 1;
+    padding: 40px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .login-box {
+    width: 100%;
+    max-width: 350px;
+    text-align: center;
+  }
+  
+  .login-box h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 10px;
+    color: #555;
+    text-align: left;
+  }
+  
+  input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+  input:focus {
+    border-color: #1877f2; /* Replace with your app's color */
+  }
+  
+  button {
+    width: 100%;
+    padding: 12px;
+    background-color: #1877f2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #155bb5;
+  }
+  
+  hr {
+    margin: 20px 0;
+  }
+  
+  .create-account-button {
+    width: 100%;
+    padding: 12px;
+    background-color: #42b72a;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .create-account-button:hover {
+    background-color: #36a420;
+  }
+  

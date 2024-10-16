@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register for Event</title>
+  <link rel="stylesheet" href="register.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="index.html">Create Event</a>
+      <a href="viewevents.html">View Events</a>
+      <a href="registerevent.html">Register for Event</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="registration-form">
+      <h2>Register for an Event</h2>
+
+      <!-- Form for registering to an event -->
+      <form id="registerForm">
+        <label for="event-select">Select Event:</label>
+        <select id="event-select" name="event-select" required>
+          <option value="" disabled selected>-- Choose an Event --</option>
+          <!-- Options will be dynamically populated here from the backend -->
+        </select>
+
+        <button type="submit">Register</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- Include the JavaScript file to handle fetching events and registration -->
+  <script src="registerevent.js"></script>
+</body>
+</html>

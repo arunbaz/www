@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Events</title>
+    <link rel="stylesheet" href="viewstyles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Create Event</a>
+            <a href="viewevents.html">View Events</a>
+            <a href="registerevent.html">Register for Event</a>
+        </nav>
+    </header>
+
+    <div class="title-container">
+        
+    </div>
+
+    <!-- Search bar -->
+    <div class="search-container">
+        <input type="text" id="searchInput" placeholder="Search by event name or sport">
+        <button onclick="searchEvents()">Search</button>
+    </div>
+
+    <!-- Upcoming events table -->
+    <div class="events-container">
+        <h3>Upcoming Events</h3>
+        <table id="upcomingEventsTable">
+            <thead>
+                <tr>
+                    <th>Event Name</th>
+                    <th>Date</th>
+                    <th>Location</th>
+                    <th>Sport</th>
+                </tr>
+            </thead>
+            <tbody id="upcomingEventsBody">
+                <!-- Events will be dynamically inserted here -->
+            </tbody>
+        </table>
+    </div>
+
+    <!-- My Registered Events -->
+    <div class="events-container">
+        <h3>My Registered Events</h3>
+        <table id="myEventsTable">
+            <thead>
+                <tr>
+                    <th>Event Name</th>
+                    <th>Date</th>
+                    <th>Location</th>
+                    <th>Sport</th>
+                </tr>
+            </thead>
+            <tbody id="myEventsBody">
+                <!-- My registered events will be dynamically inserted here -->
+            </tbody>
+        </table>
+    </div>
+
+    <script src="viewevents.js"></script>
+</body>
+</html>
